@@ -16,4 +16,11 @@
         app:navGraph="@navigation/game_navigation"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

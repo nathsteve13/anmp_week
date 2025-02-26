@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
 import com.example.anmp_week1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        binding.bottomNav.setupWithNavController(navController)
 
         navController =
             (supportFragmentManager.findFragmentById(R.id.hostFragment)
